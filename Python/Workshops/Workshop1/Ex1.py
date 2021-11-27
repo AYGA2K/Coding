@@ -4,10 +4,11 @@ def somme(n):
   for i in range(1,n+1):
    x=x*i
    s=s+(x/i)
-  print(s) 
+   
+  return s
  
 
-somme(2)
+print( somme(5))
   
 
 

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CV Dévloppeur web</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Mylayout.css">
+</head>
+
+<body  >
+
+  <header>
+    <div class="header">
+      <!--mettre l'en-tête dans une classe pour le styler-->
+      <a href="https://www.linkedin.com/"> <img src="user.png" alt="pour voir mon profile Linkedin"></a>
+      <!-- faire un lien de linkedin pour image -->
+      <br>
+      <h1>Dévloppeur web</h1>
+
+      <br>
+      
+
+    </div>
+  </header>
+  
+  <div class="layout">
+    
+    <!-- classe pour styler la rubique gauche,la rubique droite et le pied de page -->
+    <!-- La rubrique gauche -->
+      
+    <nav style="margin-top:50px ;" >
+      <h2 style="padding-left: 5px;" >Informations:</h2>
+      <ul>
+        <li><strong>Nom et Prénom: </strong> Exemple Exemple</li>
+        <Li><strong>Telephone: </strong>0645127845</Li>
+        <li><strong>Adresse: </strong>exemple Adresse,TANGER</li>
+        <li><strong>Email: </strong> exemple@gmail.com
+        </li>
+        <li><strong>propos: </strong>Le lorem ipsum est, en imprimerie, while em is relative to the font-size of its
+          direct or nearest parent ,rem is only relative to the html (root)font-size, le texte définitif venant
+          remplacer le faux-texte dès qu'il est pret ou que lq mise-en-page est achevée.
+        </li>
+      </ul>
+    </nav>
+
+    <!-- La rubrique droite, -->
+<section  >
+   
+    <div class="main" > 
+
+          <input  type="text" id="todo" placeholder=" intitulé de la formation " >
+          <input type="button" id="Mybutton" value="Ajouter"  onclick="Ajouter()"; > 
+
+
+    </div>
+       
+   <div class="todos" id="demo" >
+
+      
+       <div class="hideee" id="Deust"  >
+         <ul  >
+           <li  >
+            <button class="toggle-off " id="Toggle_Button" onclick="show_hide()"  > </button>
+           
+           <p> <input type="button" value="Deust" id="Deust_Button" class="btn" onclick="show_hide()";  > </p>
+         
+           <button class="edit" id="Edit_Button" onclick="show_focus()" ></button>
+           <button class="delete" id="del" onclick="delete_function()"  > </button>
+           </li> 
+
+           <div class="details" id="Details" >
+          
+             <div>  <label > Organisme responsable : </label>   <label id="label1"   >  </label>  <div style="display: inline-block;" id="checkbox1" ></div> <input  type="text" id="inp1" placeholder="Modifier" > 
+              
+              </div>
+              <div>  <label > Type diplome : </label>  <label id="label2"   >  </label> <div style="display: inline-block;" id="checkbox2" ></div> <input type="text" id="inp2"  placeholder="Modifier"   > 
+                
+                </div>
+                <div> <label > Date de la formation :</label>    <label id="label3"   >  </label>  <div style="display: inline-block;" id="checkbox3" ></div> <input type="date" id="inp3"  placeholder="Modifier"    > 
+                  
+                  </div>
+            
+            
+
+             <label class="lebelcheck"  for=""> terminer ou en cours  </label> 
+             <input type="checkbox"  id="labelcheckbox" onclick="check_function()";  >
+       
+             <input type="submit" value="valider les modifications" id="submitbutton"  >
+
+           </div>
+      
+          </ul>
+       </div>  
+
+       <div class="hideee" id="License"  >
+        <ul  >
+          <li  >
+           <button class="toggle-off " id="Toggle_Button1" onclick="show_hide1()"  > </button>
+           <p> <input type="button" id="License_Button" class="btn" value="License"  onclick="show_hide1()";  >  </p>
+        
+          <button class="edit"   onclick="show_focus1()" ></button>
+          <button class="delete"  onclick="delete_function1()"  > </button>
+          </li> 
+
+          <div class="details" id="Details1" >
+         
+            <div> <label > Organisme responsable :   </label>  <label id="label11"  >  </label> <div style="display: inline-block;" id="checkbox11"  ></div>  <input type="text" id="inp11" oninput="addcheck1()" placeholder="Modifier"   > 
+             
+             </div>
+             <div>  <label > Type diplome :  </label>  <label id="label12"  >  </label> <div style="display: inline-block;" id="checkbox12" ></div> <input type="text" id="inp12" oninput="addcheck1()"  placeholder="Modifier"   > 
+             
+             </div>
+             <div>   <label > Date de la formation : </label>   <label id="label13"  >  </label> <div  style="display: inline-block;" id="checkbox13" ></div> <input type="date" id="inp13"  oninput="addcheck1()" placeholder="Modifier"    > 
+             
+             </div>
+           
+          
+
+            <label id="lebelcheck"  for=""> terminer ou en cours  </label> 
+            <input type="checkbox"  id="labelcheckbox1" onclick="check_function1()"; >
+            <input type="submit" value="valider les modifications" id="submitbutton1"  >
+           
+
+          </div>
+     
+         </ul>
+      </div> 
+      
+      <div class="hideee" id="Master"  >
+        <ul  >
+          <li  >
+           <button class="toggle-off " id="Toggle_Button2" onclick="show_hide2()"  > </button>
+           <p> <input type="button" id="Master_Button" class="btn" value="Master" onclick="show_hide2()";  ></p>
+        
+          <button class="edit" id="Edit_Button2" onclick="show_focus2()" ></button>
+          <button class="delete"  onclick="delete_function2()"  > </button>
+          </li> 
+
+          <div class="details" id="Details2" >
+         
+            <div> <label  >  Organisme responsable : </label>   <label id="label21"  >  </label>  <div  style="display: inline-block;" id="checkbox21"  ></div>  <input type="text" id="inp21"  placeholder="Modifier"  > 
+             
+             <div>  <label > Typde diplome :   </label> <label id="label22"  >   </label>  <div style="display: inline-block;" id="checkbox22" ></div> <input type="text" id="inp22"  placeholder="Modifier"   >
+             
+             <div>  <label >  Date de la formation : </label>  <label id="label22"  >   </label>  <div  style="display: inline-block;" id="checkbox23" ></div> <input type="date" id="inp23"  placeholder="Modifier"   >  
+             
+             </div>
+           
+           
+
+            <label> terminer ou en cours  </label> 
+            <input type="checkbox"  id="labelcheckbox2"   >
+            <input type="submit" value="valider les modifications" id="submitbutton2"  >
+      
+           
+
+          </div>
+     
+         </ul>
+      </div> 
+
+    </div>   
+
+
+    
+
+</section>
+    
+
+    <footer>
+
+      <div style="margin-top: 25px;"  >  <span style="margin-left: 40px;" > loisirs: jeux video , football . </span>
+        
+          <!-- faire un lien de linkedin pour l'image et le text -->
+          <a href=" https://www.linkedin.com/ "> <img style=" width: 20px; height: 20px; " src="Linkedin.png" alt="">
+            <span >Profile Linkedin </span> </a>
+    
+
+          </div>
+      <br>
+    </footer>
+  
+  </div>
+  <script src="index.js"  >  </script>
+</body>
+
+
+</html>

@@ -1,0 +1,16 @@
+.Header {
+  background-color: aqua;
+}
+
+.Header h1 {
+  display: inline;
+  width: 400px;
+  background-color: aliceblue;
+}
+
+.Header p {
+  display: inline;
+}
+.Header button {
+  margin-left: 400px;
+}

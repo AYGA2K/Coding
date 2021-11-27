@@ -1,0 +1,10 @@
+h1 {
+  text-align: center;
+  background-color: aqua;
+}
+
+.player {
+  text-align: center;
+  display: inline-block;
+  margin-left: 20%;
+}

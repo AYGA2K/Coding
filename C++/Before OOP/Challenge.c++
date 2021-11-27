@@ -14,23 +14,23 @@ int main()
       cout<<" S: Display the smallest number in the list  "<<endl;
       cout<<" L: Display the largest number in the list  "<<endl;
      cin>>Selection;
-     
+
      if ( Selection== 'A' || Selection=='a' )
      {
        cout<<"please add a number"<<endl;
        cin>>Added_number;
        vec.push_back(Added_number);
-       cout<<Added_number << " added"<<endl;   
+       cout<<Added_number << " added"<<endl;
      }
      else if ( Selection== 'M' || Selection=='m' )
      {
        for (int i = 0; i < vec.size(); i++)
        {
-         Sum+=vec[i];   
+         Sum+=vec[i];
        }
        Average=Sum/vec.size();
-       cout<<"Average is " << Average<<endl; 
-       
+       cout<<"Average is " << Average<<endl;
+
      }
       else if (Selection== 'S' || Selection=='s')
      {
@@ -44,16 +44,16 @@ int main()
         }
         cout<<"Samllest is " << Smallest <<endl;
      }
-        
-     
-     
-     
+
+
+
+
 
 
 
       /* code */
   } while (Selection!='Q' || Selection!='q' );
-  
+
 
     return 0;
 }

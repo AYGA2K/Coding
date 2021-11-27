@@ -10,18 +10,21 @@ private:
     int xp;
     int age;
 
+
 public:
     void talk(string Message)
     {
         cout <<name<<" said: " <<Message << endl;
+
     }
 };
+int main(int argc, char const *argv[])
 
-int main()
 {
     Player Ayoub;
-    
-       
+    Ayoub = Player()  ;
+
+
        Ayoub.talk("Change it ");
         return 0;
 }

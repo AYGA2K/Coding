@@ -5,4 +5,4 @@ def somme (n):
     result=0
   return result
 
-print(somme(5))
+print(somme(2))
