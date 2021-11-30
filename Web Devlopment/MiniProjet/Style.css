@@ -1,292 +1,135 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
-  font-family: Arial;
-  padding: 20px;
+  overflow-x: hidden;
+  background-color: white;
 }
-/*
-.backgroud {
-  background-image: url(/travel-concept-with-landmarks.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}*/
 
-/* Header/Blog Title */
 .header {
-  text-align: center;
-  display: flex;
+  background-color: black;
+  color: aliceblue;
 }
-
 .header h1 {
-  font-size: 50px;
-}
-.edit_width {
-  height: 400px;
-  width: 100%;
-}
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Style the topnav links */
-.topnav span {
-  float: left;
-  display: block;
-  color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
 }
-
-/* Change color on hover */
-.topnav span:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {
-  float: left;
-  width: 75%;
-  height: 500px;
-  background-color: rgba(129, 160, 168, 0.466);
-}
-
-/* Right column */
-.rightcolumn {
-  float: right;
-
-  width: 25%;
-  background-color: rgba(141, 207, 196, 0.466);
-  padding-left: 20px;
-}
-/* Add a card effect for articles */
-.card {
-  display: inline;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background-color: rgba(195, 211, 195, 0.466);
-
-  margin-top: 10%;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn,
-  .rightcolumn {
-    width: 100%;
-    padding: 0;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
-
-/* Search Form */
-
-#search-form {
-  border: 1px solid rgb(0, 174, 255);
-  height: 20px;
-  position: relative;
-}
-
-#header {
-  height: 20px;
-  background: rgb(11, 128, 206);
+.row {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  flex-wrap: nowrap;
 }
-#header h1 {
-  color: #fff;
-  margin-left: 20px;
-  font-size: 1.3em;
+.left {
+  width: 70%;
 }
+.right {
+  width: 30%;
 
-.flight {
-  padding: 15px;
+  background-color: aliceblue;
 }
-.flight input,
-select {
-  color: #0f0e0e;
-}
-
-.info-box {
-  padding: 10px 0;
-  margin-top: 20px;
-  flex: 1;
-  border-right: 20px solid transparent;
-}
-.info-box:last-child {
-  border-right: none;
-}
-.info-box label {
-  display: block;
-  color: #0e0c0c;
-  font-size: 0.9em;
-}
-.info-box input[type="text"],
-input[type="submit"],
-select {
-  border: none;
-  outline: none;
-  background: #e2e0e0;
-  margin-top: 5px;
-  width: 100%;
-  padding: 5px;
-  height: 30px;
-  border-radius: 3px;
-}
-
-#flight-type {
+.home-page {
+  border: 1px solid gray;
   display: flex;
-  justify-content: flex-start;
-  border-bottom: 1px dotted silver;
-}
-#flight-type .info-box {
-  flex: 0 1 25%;
-  display: flex;
-  align-items: center;
-}
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 
-#flight-depart {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px dotted silver;
-}
-#flight-depart .info-box {
-  position: relative;
-}
-#depart-res,
-#arrive-res {
-  position: absolute;
-  background: #ffffff;
-}
-#depart-res p,
-#arrive-res p {
-  padding: 7px 2px;
-  border-bottom: 1px dotted silver;
-}
-#depart-res p:hover,
-#arrive-res p:hover {
-  background: #ededed;
-  cursor: pointer;
-}
-
-#flight-dates {
-  display: flex;
-  border-bottom: 1px dotted silver;
-}
-
-#flight-info {
-  display: flex;
-  border-bottom: 1px dotted silver;
-}
-
-#flight-search .info-box {
-  display: flex;
-  justify-content: center;
-}
-#flight-search input[type="submit"] {
-  background: #065a8a;
-  color: white;
-  padding: 0;
-  height: 50px;
-  font-size: 1.2em;
-}
-
-/* Calender */
-#calender {
-  border: 3px solid red;
-  padding: 5px;
-  opacity: 0;
-  background: #ffffff;
-  position: absolute;
-  transition: opacity 0.3s;
-  pointer-events: none;
-}
-#calender .nav {
-  padding: 3px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 5px;
-}
-#calender .nav button {
-  background: #ff3240;
-  border: none;
-  outline: none;
-  color: #ffffff;
-  padding: 5px 8px;
-  font-weight: 600;
-  border-radius: 3px;
-}
-table {
-  border: 1px solid #dbdbdb;
-  background: #f4f4f4;
-}
-table td {
-  border: 1px solid #dbdbdb;
-  padding: 5px;
-  text-align: center;
-  cursor: pointer;
-}
-.normal {
-  color: rgba(0, 0, 0, 0.8);
-}
-.today {
-  background: #ff3240;
-  color: #ffffff;
-}
-.closed {
-  color: #dbdbdb;
-  cursor: default;
-}
-.picked {
-  background: green;
-}
-#month {
-  display: inline-block;
-}
-
-#confirm {
-  width: 500px;
-  padding: 20px;
-  border: 5px solid #55af3a;
-  margin: 20px auto;
-  opacity: 0;
-}
-#confirm h3 {
-  font-size: 1.2em;
-  margin-bottom: 20px;
-}
-#confirm p {
   padding: 10px;
 }
-#confirm strong {
-  font-weight: 600;
+.image-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 49%;
+}
+.image-card img {
+  width: 100%;
+  height: 300px;
+}
+
+.image-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+  padding: 2px 16px;
+  background-color: white;
+}
+
+.booking-form-box {
+  border: 1px solid gray;
+  display: none;
+  background-color: white;
+}
+.radio-btn {
+  margin: 0 20px;
+}
+.radio-btn .btn {
+  margin: 20px 10px 20px 0;
+  box-shadow: none;
+}
+
+.radio-btn span {
+  color: black;
+  margin-right: 5px;
+  font-size: 12px;
+}
+.booking-form {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.booking-form input {
+  width: 45%;
+}
+.booking-form label {
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #000 !important;
+}
+input::placeholder {
+  color: #333;
+}
+.input-grp {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  width: 32.5%;
+}
+.btn {
+  color: black;
+}
+.form-control {
+  font-size: 12px !important;
+  border-radius: 0 !important;
+  color: black !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.select-date::-webkit-inner-spin-button,
+.select-date::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.select-date::-webkit-calender-picker-indicator {
+  background: transparent !important;
+}
+.custom-select {
+  color: black !important;
+  font-size: 12px !important;
+  border: 1px solid black !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+.custom-select option {
+  color: #333;
+}
+.flight {
+  width: 100%;
+  padding: 9px 0;
+  font-size: 12px;
+  border: 1px solid black !important;
+  background-color: transparent;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+.flight:hover {
+  background: black !important;
+  color: white !important;
+  transition: 0.5s;
 }
