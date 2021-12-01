@@ -1,0 +1,37 @@
+.volet3 { 
+    
+width: 70%;
+
+   
+   
+}
+.cart{ 
+    
+    
+    
+}
+body{
+  background-image: url(final.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+span{
+    color: rgb(144, 79, 57);
+}
+
+h1{
+    color: rgb(216, 123, 69);
+}
+canvas{
+   background-image: url(ISTANBUL.webp);
+   background-size: cover;
+   background-repeat: repeat;
+   width: 40%;
+   height: 40%;
+}
+.section {
+    
+  display: flex;
+ 
+   
+}

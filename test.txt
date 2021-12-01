@@ -1,0 +1,5 @@
+#!/bin/bash
+clear 
+echo -n "Repertoire courant: "; pwd
+date +"%d%m%Y a %Hh%M"
+echo -n "Numbre de Fichiers: ";ls | wc -1
