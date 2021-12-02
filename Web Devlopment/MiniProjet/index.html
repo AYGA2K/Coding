@@ -4,40 +4,81 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="album.css">
   <link rel="stylesheet" href="Style.css">
   <title>Document</title>
 </head>
 <body>
   <div class="header" >  
-    <h1> North Travel Agency </h1>
+    <div class="logo-title" > 
+      <img src="/Images/travel-agency-logo-trip-design-vector-illustration-189081657.jpg" alt="">
+      <h1>North Travel Agency</h1>  
+    </div>
+    
+    <nav class="navbar navbar-expand-lg  "  >
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" id="home"    style="color: white ; cursor: pointer; ">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" target="test" href="About.html" id="menu1" style="color: white;">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact-Us.html" target="test"  id="menu2" style="color: white;" >Contact Us </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;" >
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: rgb(23, 203, 216);" >
+                <li><a class="dropdown-item" target="test"  href="Flights.html" id="menu3"  style="color: white;" >Flight</a></li>
+                <li><a class="dropdown-item" target="test" href="Train.html" id="menu4"  style="color: white;" >Train</a></li>
+                <li><a class="dropdown-item" target="test" href="Cars.html" id="menu5"  style="color: white;" >Car Rental</a></li>
+                <li><a class="dropdown-item" target="test" href="Stays.html" id="menu6"  style="color: white;" >Stays</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
     <div id="carouselExampleCaptions" class="carousel slide" style="padding: 5px;" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-inner">
+      <div class="carousel-inner" >
         <div class="carousel-item active">
-          <img src="Italy Tartano.jpg" class="d-block w-100 height-set " alt="...">
+          <img src="/Images/Slide1.jpg" style=" width: 100%; " class="d-block  height-set slide-padding  " alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h3>North Travel Agency </h3>
+            <h2>   North Travel Agency </h2>
             <p> Everything you need to travel  </p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="thailand krabi.jpg" class="d-block w-100 height-set "  alt="...">
+          <img src="/Images/Slide2.jpg"  style="width: 100%; " class="d-block   height-set slide-padding   "  alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h3>North Travel Agency</h3>
-            <p> site dyalna wa3r </p>
+            <h2>   North Travel Agency </h2>
+            <p> Everything you need to travel  </p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="Panama.jpg" class="d-block w-100 height-set " alt="...">
+          <img src="/Images/Slide3.jpg" class="d-block  height-set slide-padding  " style="width: 100%; " alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h3>North Travel Agency</h3>
-            <p> hsn mn wa3r ga3 </p>
+            <h2>   North Travel Agency </h2>
+            <p> Everything you need to travel  </p>
           </div>
         </div>
       </div>
@@ -51,301 +92,130 @@
       </button>
     </div>
  
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" data-toggle="#div1"  href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" data-toggle="#div6" >About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" data-toggle="#div7" >Today's Deals </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Services
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" data-toggle="#div2" href="#">Flight</a></li>
-                <li><a class="dropdown-item" data-toggle="#div3"  href="#">Train</a></li>
-                <li><a class="dropdown-item"  data-toggle="#div4" href="#">Car Rental</a></li>
-                <li><a class="dropdown-item"  data-toggle="#div5" href="#">Stays</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    
 </div>
+<div class="backg" > 
+  <div class="button-minimize"  >-</div>
 <div class="row" > 
+  
   <div class="left" id="left" > 
-    <div class="button-minimize"  >-</div>
-   <div class="Black-friday" > 
-    <h3> This Black Friday,shop for travel </h3>
-    <p> Get 30% off stays worldwide – where will you make memories? </p>
-  </div>
-  <div class="image-card" id="img1" >
-    <img src="croatia dubrovnik.jpg" alt="Avatar"  >
-    <div class="image-container">
-      <h4><b>John Doe</b></h4> 
-      <p>Architect & Engineer</p> 
-    </div>
-  </div>
-  <div class="image-card">
-    <img src="Denmark Copenhagen.jpg" alt="Avatar" >
-    <div class="image-container">
-      <h4><b>John Doe</b></h4> 
-      <p>Architect & Engineer</p> 
-    </div>
-  </div>
-  <div class="image-card">
-    <img src="Italy Venice.jpg" alt="Avatar" >
-    <div class="image-container">
-      <h4><b>John Doe</b></h4> 
-      <p>Architect & Engineer</p> 
-    </div>
-  </div>
-  <div class="image-card">
-    <img src="Maldives.jpg" alt="Avatar" >
-    <div class="image-container">
-      <h4><b>John Doe</b></h4> 
-      <p>Architect & Engineer</p> 
-    </div>
-  </div>
+
+    <div id="mini-left" > 
    
+  <div class="image-card" id="img1"  >
+    <img src="/Morocco/marakech.jpg" alt="Avatar"  >
+    <div class="image-container">
+      
+      <h4><b>Morocco</b></h4> 
+      
+      <a  target="test" href="Morroco.html" id="details0"  > more details </a>
+    </div>
+  </div>
+  <div class="image-card">
+    <img src="Thailand/koh-samui.jpg" alt="Avatar" >
+    <div class="image-container">
+      <h4><b>Thailand</b></h4> 
+      <a  target="test" href="Thailand.html" id="details1"  > more details </a>
+    </div>
+  </div>
+  <div class="image-card">
+    <img src="/Poland/gdansk.jpg" alt="Avatar" >
+    <div class="image-container">
+      <h4><b>Poland</b></h4> 
+      <a  target="test" href="Poland.html" id="details2" > more details </a>
+    </div>
+  </div>
+  
+</div>
   </div>
   <div class=" right" > 
+    
+    <div id="table" > 
+    
+<div class="container-lg">
+  <div class="table-responsive">
+      <div class="table-wrapper">
+          <div class="table-title">
+              <div class="row">
+                  <div class="col-sm-8"><h2>Employee <b>Details</b></h2></div>
+                  <div class="col-sm-4">
+                      <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i> Add New</button>
+                  </div>
+              </div>
+          </div>
+          <table class="table table-bordered">
+              <thead>
+                  <tr>
+                      <th>Service</th>
+                      <th>From</th>
+                      <th>To</th>
+                      <th> Number of Passengers </th>
+                      <th>class</th>
+                      <th>Actions</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Flights</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                          <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                          <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                          <a class="delete" title="Delete" data-toggle="tooltip1"><i class="material-icons">&#xE872;</i></a>
+
+                      </td>
+                  </tr>
+                    
+              </tbody>
+          </table>
+      </div>
+  </div>
+</div>    
+    </div>
   
-    <div class="home-page" id="div1" > 
-
-      
-     
-     
-          
-        </div>
-      
-      <div class="booking-form-box" id="div2" > 
-      <div class="radio-btn" >
-        <input type="radio"  class="btn"  value="check"
-        checked>
-      <label > One Way </label>
-      <input type="radio"  class="btn"  >
-      <label >Multiple Cities</label>
-      </div>
-      <div class="booking-form" >
-      <label for=""> from: </label> <input type="text" class="form-control" placeholder="airport" > 
-      <label for=""> to: </label> <input type="text" class="form-control" placeholder="airport" > 
-      </div>
-      <div class="input-grp" > 
-      <label for=""  > Departing  </label> <input class="form-control1 select-date "   type="date" name="" id=""> 
-      <label for=""> Arriving </label> <input  class="form-control1 select-date " type="date" name="" id=""> 
-      </div>
-      <div class="input-grp" > 
-        <label for=""> Adults </label> <input  class="form-control1  " type="number" value="1" id=""> 
-      </div>
-      <div class=" input-grp " >
-        <label for=""> Childern </label> <input  class="form-control1  " type="number" value="1" id=""> 
-      </div>
-      <div class="input-grp" >
-        <label for=""> Travel Class </label>
-        <select class="cusom-select"  name="" id="">
-          <option value="1"> Economy Class </option>
-          <option value="2"> Business Class </option>
-        </select>
-      </div>
-      <div class="input-grp" > 
-      <button type="button" class="btn btn-primary flight   "  > Show Flights </button>  
-      </div>
-      
-      </div>  
-      
-      
-      <div class="booking-form-box" id="div3" > 
-        <div class="radio-btn" >
-          <input type="radio" class="btn" checked>
-      <label >One Way</label>
-      <input type="radio" class="btn" >
-      <label >Round Trip</label>
-      </div>
-        <div class="booking-form" >
-        <label for=""> from </label> <input type="text" class="form-control" placeholder="airport" > 
-        <label for=""> to </label> <input type="text" class="form-control" placeholder="airport" >
-        </div>
-        <div class="input-grp" > 
-        <label for=""> Departing </label> <input class="form-control1 select-date "   type="date" name="" id=""> 
-        <label for=""> Arriving </label> <input  class="form-control1 select-date " type="date" name="" id=""> 
-        </div>
-        <div class="input-grp" > 
-          <label for=""> Adults </label> <input  class="form-control1  " type="number" value="1" id=""> 
-        </div>
-        <div class=" input-grp " >
-          <label for=""> Childern </label> <input  class="form-control1  " type="number" value="1" id=""> 
-        </div>
-        <div class="input-grp" >
-          <label for=""> Travel Class </label>
-          <select class="cusom-select"  name="" id="">
-            <option value="1"> first Class </option>
-            <option value="2"> second Class </option>
-          </select>
-        </div>
-        <div class="input-grp" > 
-        <button type="button" class="btn btn-primary flight   "  > Show Trains </button>  
-        </div>
-        </div>
+    <iframe src="" name="test" class="responsive-iframe" allowtransparency = "true"  ></iframe>
+         
+         
         
-        <div class="booking-form-box" id="div4" > 
-          <div class="radio-btn" >
-            <input type="radio" class="btn" checked>
-        <label >One Way</label>
-        <input type="radio" class="btn" >
-        <label >Round Trip</label>
-        </div>
-          <div class="booking-form" >
-          <label for=""> from </label> <input type="text" class="form-control" style="background-color: transparent;" placeholder="airport" > 
-          <label for=""> to </label> <input type="text" class="form-control" placeholder="airport" >
-          </div>
-          <div class="input-grp" > 
-          <label for=""> Departing </label> <input class="form-control1 select-date "   type="date" name="" id=""> 
-          <label for=""> Arriving </label> <input  class="form-control1 select-date " type="date" name="" id=""> 
-          </div>
-          
-          
-          <div class="input-grp" >
-            <label for=""> Driver Age </label>
-            <select class="cusom-select"  name="" id="">
-              <option value="1"> +30 </option>
-              <option value="2"> Any </option>
-            </select>
-          </div>
-          <div class="input-grp" >
-            <label for=""> Car Size </label>
-            <select class="cusom-select"  name="" id="">
-              <option value="1"> Small </option>
-              <option value="2"> Medium </option>
-              <option value="2"> Big </option>
-            </select>
-          </div>
-          <div class="input-grp" >
-            <label for=""> Air Conditioner </label>
-            <select class="cusom-select"  name="" id="">
-              <option value="1"> Available </option>
-              <option value="2"> Not Available </option>
-            
-            </select>
-          </div>
-
-
-          <div class="input-grp" > 
-          <button type="button" class="btn btn-primary flight   "  > Show Cars </button>  
-          </div>
-          </div>
-        
-      
-        
-          
-          <div class="booking-form-box" id="div5" > 
-            <div class="radio-btn" >
-              <input type="radio" class="btn" checked>
-          <label >All Stays</label>
-          <input type="radio" class="btn" >
-          <label > Hotel </label>
-          <input type="radio" class="btn" >
-          <label >House/Apartment</label>
-          </div>
-            <div class="booking-form" >
-            <label for=""> Country </label> <input type="text" class="form-control  "  placeholder="City" > 
-            <label for=""> City </label> <input type="text" class="form-control  "  placeholder="City" > 
-            
-            </div>
-            <div class="input-grp" > 
-            <label for=""  > Departing </label> <input class="form-control1 select-date "   type="date" name="" id=""> 
-            <label for=""> Arriving </label> <input  class="form-control1 select-date " type="date" name="" id=""> 
-            </div>
-            <div class="input-grp" > 
-              <label for=""> Adults </label> <input  class="form-control1  " type="number" value="1" id=""> 
-            </div>
-            <div class=" input-grp " >
-              <label for=""> Childern </label> <input  class="form-control1  " type="number" value="1" id=""> 
-            </div>
-            <div class=" input-grp " >
-              <label for=""> Rooms </label> <input  class="form-control1  " type="number" value="1" id=""> 
-            </div>
-          
-            <div class="input-grp" > 
-            <button type="button" class="btn btn-primary flight   "  > Search </button>  
-            </div>
-            </div>
-            <div class="about-us" id="div6" > 
-             <h3> About North Travel Agency </h3>
-             <p>
-              
-              Founded in 2021,
-             By investing in technology that takes the friction out of travel,
-             NTA.com seamlessly connects millions of travelers to memorable experiences,
-              a variety of transportation options, and incredible places to stay – from homes to hotels, 
-              and much more. As one of the world’s largest travel marketplaces for both established brands and entrepreneurs of all sizes,
-               NTA.com enables properties around the world to reach a global audience and grow their businesses.
-              
-             </p>
-              
-            </div>
-            <div class="deals-box" id="div7" > 
-            <div class="deals"  > 
-            
-              <div class="deal-card">
-                <img src="croatia dubrovnik.jpg" alt="Avatar"  >
-                <div class="image-container">
-                  <h4><b>John Doe</b></h4> 
-                  <p> Get a discount of 8% </p> 
-                </div>
-              </div>
-              <div class="deal-card">
-                <img src="Denmark Copenhagen.jpg" alt="Avatar" >
-                <div class="image-container">
-                  <h4><b>John Doe</b></h4> 
-                  <p>Get a discount of 8%</p> 
-                </div>
-              </div>
-              <div class="deal-card">
-                <img src="Italy Venice.jpg" alt="Avatar" >
-                <div class="image-container">
-                  <h4><b>John Doe</b></h4> 
-                  <p>Get a discount of 8%</p> 
-                </div>
-              </div>
-              <div class="deal-card">
-                <img src="Maldives.jpg" alt="Avatar" >
-                <div class="image-container">
-                  <h4><b>John Doe</b></h4> 
-                  <p>Get a discount of 8%</p> 
-                </div>
-              </div>
-              
-            </div>
-          </div>
-          </div>
-          <hr>  
-          <div class="footer" > 
-            <h3> Contact Info </h3>
-            <p> Phone: xx-xx-xx-xx-xx </p>
-            <p>Whatsapp: xx-xx-xx-xx-xx</p>
-            <p>Email: xxxx@gmail.com</p>
-          </div>
         
   </div>
+  </div>
+</div>
+
+  <div class="footer"   > 
+    <div   id="minfot" >-</div>
+    
+    <div class="flex" > 
+    <div> 
+   <h5>Contact Info:</h5>
+    <ul style="list-style: none;" > 
+      <li> Phone: xx-xx-xx-xx-xx </li>
+    <li>Whatsapp: xx-xx-xx-xx-xx</li>
+    <li>Email: xxxx@gmail.com</li>
+    </ul>
+  </div>
+  <div>
+      <a href="">Hotels</a>
+    <a href=""> Cities </a>
+    <a href=""> Airpots </a>
+    <a href=""> Apartment </a>
+    <a href="">Car Rental</a>
+    
+  </div>
   
-  
+  </div>
 
 
-   
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <script src="index.js"></script>
 </body>
 </html>

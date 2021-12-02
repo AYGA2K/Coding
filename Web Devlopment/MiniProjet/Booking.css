@@ -1,0 +1,105 @@
+.booking-form-box {
+  color: black;
+  font-size: larger;
+  background-color: rgba(156, 160, 167, 0.425);
+}
+.radio-btn {
+  margin: 0 20px;
+}
+.radio-btn .btn {
+  margin: 20px 10px 20px 0;
+  box-shadow: none;
+}
+
+.radio-btn span {
+  color: black;
+  margin-right: 5px;
+  font-size: 12px;
+}
+.booking-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.booking-form input {
+  width: 45%;
+}
+.booking-form label {
+  margin-bottom: 5px;
+  margin-top: 10px;
+
+  color: black !important;
+}
+input::placeholder {
+  color: black;
+}
+.input-grp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  width: 32.5%;
+}
+.input-grp button,
+select {
+  text-transform: none;
+  background-color: transparent;
+}
+.btn {
+  cursor: pointer;
+  color: black;
+  border: #ced4da;
+}
+
+.form-control1 {
+  width: 65%;
+  height: 20%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  font-size: 12px !important;
+  border-radius: 0 !important;
+  color: black !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.select-date::-webkit-inner-spin-button,
+.select-date::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.select-date::-webkit-calender-picker-indicator {
+  background: transparent !important;
+}
+.custom-select {
+  color: black !important;
+  font-size: 12px !important;
+  border: 1px solid black !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+.custom-select option {
+  color: black;
+}
+.flight {
+  width: 100%;
+  padding: 9px 0;
+  font-size: 12px;
+  border: 1px solid black !important;
+
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+.form-control {
+  background-color: transparent;
+}
