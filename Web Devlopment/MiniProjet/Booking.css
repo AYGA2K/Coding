@@ -1,7 +1,7 @@
 .booking-form-box {
   color: black;
   font-size: larger;
-  background-color: rgba(156, 160, 167, 0.425);
+  background-color: rgba(189, 231, 238, 0.616);
 }
 .radio-btn {
   margin: 0 20px;
@@ -18,7 +18,7 @@
 }
 .booking-form {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   padding: 10px;
 }

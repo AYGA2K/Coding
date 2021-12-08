@@ -28,6 +28,7 @@ $("#home").on("click", function () {
 for (let index = 1; index < 7; index++) {
   $("#menu" + index).on("click", function () {
     $("#table").hide();
+    $("iframe").css("margin-left", "1%");
     $("iframe").show();
     $("#left").show();
     $("iframe").css("height", "100%");
@@ -49,7 +50,8 @@ $(document).ready(function () {
       '<td><input type="text" class="form-control" name="name" id="name"></td>' +
       '<td><input type="text" class="form-control" name="department" id="department"></td>' +
       '<td><input type="text" class="form-control" name="phone" id="phone"></td>' +
-      '<td><input type="text" class="form-control" name="phone" id="date"></td>' +
+      '<td><input type="text" class="form-control" name="number" id="number"></td>' +
+      '<td><input type="text" class="form-control" name="class" id="class"></td>' +
       "<td>" +
       actions +
       "</td>" +

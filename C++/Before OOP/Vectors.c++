@@ -8,6 +8,7 @@ int main ()
    for (size_t i = 0; i < 7; i++)
    {
        cout<<"Student 1 "<<i+1<<"got :"<<test_scors.at(i)<<endl;  
+    
        /* code */
    }
    

@@ -1,30 +1,28 @@
-#include <iostream>
-#include <string.h>
-#include <vector>
+#include<iostream>
 using namespace std;
-class Player
+ 
+class Point
 {
 private:
-
-    string name {"Ayoub"};
-    int xp;
-    int age;
-
-
+    int x, y;
 public:
-    void talk(string Message)
-    {
-        cout <<name<<" said: " <<Message << endl;
-
-    }
+    Point(int x1, int y1) { x = x1; y = y1; }
+ 
+    
+    Point(const Point &p1) {x = p1.x; y = p1.y; }
+ 
+    int getX()            {  return x; }
+    int getY()            {  return y; }
 };
-int main(int argc, char const *argv[])
-
+ 
+int main()
 {
-    Player Ayoub;
-    Ayoub = Player()  ;
-
-
-       Ayoub.talk("Change it ");
-        return 0;
+    Point p1(10, 15); 
+    Point p2 = p1; 
+ 
+    
+    cout << "p1.x = " << p1.getX() << ", p1.y = " << p1.getY();
+    cout << "\np2.x = " << p2.getX() << ", p2.y = " << p2.getY();
+ 
+    return 0;
 }
